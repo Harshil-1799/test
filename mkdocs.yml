@@ -1,0 +1,64 @@
+site_name: django-simple-deploy
+
+repo_url: https://github.com/ehmatthes/django-simple-deploy/
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - tables
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: false
+  - def_list
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - footnotes
+
+nav:
+  - 'Introduction': 'index.md'
+  - 'Quick Start':
+    - 'quick_starts/index.md'
+    - 'Deploying to Fly.io': 'quick_starts/quick_start_flyio.md'
+    - 'Deploying to Platform.sh': 'quick_starts/quick_start_platformsh.md'
+    - 'Deploying to Heroku': 'quick_starts/quick_start_heroku.md'
+  - 'General Documentation':
+    - 'Choosing a Platform': 'general_documentation/choosing_platform.md'
+    - 'Command Line Reference': 'general_documentation/cli_reference.md'
+  - 'Contributing':
+    - 'contributing/index.md'
+    - 'Documenting a Test Run': 'contributing/test_run.md'
+    - 'Testing on Your Own Account': 'contributing/own_account.md'
+    - 'Setting Up a Development Environment': 'contributing/development_environment.md'
+  - 'Design Documentation':
+    - 'Rationale': 'design_docs/rationale.md'
+    - 'Use Cases': 'design_docs/use_cases.md'
+    - 'Strengths and Limitations': 'design_docs/strengths_limitations.md'
+  - 'Unit Tests':
+    - 'unit_tests/index.md'
+    - 'Running Unit Tests': 'unit_tests/running_unit_tests.md'
+    - 'Understanding the Unit Tests': 'unit_tests/understanding_unit_tests.md'
+  - 'Maintaining':
+    - 'maintaining/index.md'
+    - 'Merging PRs': 'maintaining/merging_prs.md'
+    - 'Managing Releases': 'maintaining/managing_releases.md'
+    - 'Updating Documentation': 'maintaining/updating_docs.md'
+    - 'Architectural Design Record': 'maintaining/adr.md'
+  - 'Roadmap':
+    - 'roadmap/index.md'
+    - 'roadmap/reaching_one_point_o.md'    
+    
+
+
+theme: 
+  name: material
+  features:
+    - navigation.indexes
